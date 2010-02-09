@@ -1,0 +1,6 @@
+#!/bin/bash
+wd=$(pwd)
+pushd /
+$wd/webs
+popd
+

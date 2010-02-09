@@ -1,0 +1,248 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url('../img/tlo.png');
+	text-align: center;
+}
+
+#ajaxError{
+	border : solid 3px red;
+	background-color : #fee;
+	position: absolute;
+	margin: 0px auto;
+	margin-top: 10%;
+	width:522px;
+	height: 160px; 
+	text-align: left;
+	padding : 10px;
+	z-index: 2;
+	display: none;
+	overflow : hidden;
+}
+
+.loading {
+	position: absolute;
+	margin: 0px auto;
+	margin-top: 10%;
+	width:548px;
+	height: 160px; 
+	text-align: center;
+	z-index: 2;
+	background-image: url('../img/anim_2.gif');
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.container {
+	width:  708px; 
+	text-align: center;
+	margin: 0 auto;
+}
+.container.bg{
+	background-color : #fff;
+	background-image: url('../img/menu.png');
+	background-repeat : repeat-y;
+}
+#header {
+	width: 708px;
+	height: 84px;
+	background-image: url('../img/header.png');
+}
+
+#menu {
+	text-align: left;
+	float:  left;
+	width:  140px;
+/*	background-color : #FBFFFF;*/
+	border-right : solid 1px #ddd;
+}
+#menu div{
+	border-bottom : solid 1px #ddd;
+}
+#menu h3{
+	padding-left: 22px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #148;
+	font-size: 11px;
+	font-weight: 900;
+	background-image: url('../img/category.png');
+	background-repeat: no-repeat;
+	background-position: 14px 9px;  
+	border-bottom : solid 1px #ddd;
+	margin : 0;
+}
+
+#menu a{
+	background-image: url('../img/menuitem.png');
+	background-repeat: no-repeat;
+	background-position: 18px;
+	display : block;    
+	text-decoration: none;
+	color: #656363;
+	margin-right: 1px;
+	font-size: 11px;
+	padding-left: 26px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#menu a:hover{
+	background-color: #e0e0e0;
+	color: black;
+	text-decoration: none;
+}
+
+#menu a.active{
+	color: black;
+	background-image: url('../img/menuitem-sel.png');
+}
+
+.cleaner{
+	clear: both;
+	padding-bottom : 10px;
+	width:  708px;
+}
+
+#footer {
+	clear: both;
+	width:  708px;
+	height: 20px;
+	background-image: url('../img/footer.png');
+}
+
+.maincontent {
+	margin-left : 140px;
+	padding-top : 1px;
+}
+
+.maincontent #maincontent{
+	padding : 5px;
+	margin : 5px;
+/*	border : solid 1px #ddd;*/
+	text-align : left;
+}
+.frame{
+	border : solid 1px #ddd; 
+	padding : 5px;
+	margin-bottom : 10px; 
+}
+.frame:hover {
+	background-color : #F2F8FF;
+}
+#maincontent h1{
+	font-size : 10pt;
+}
+#maincontent h2{
+	font-size : 9pt;
+}
+#maincontent pre{
+	font-size : 8pt;
+	color : #008;
+	overflow : auto;
+}
+table.nice{
+	font-size : 7pt;
+	width : 100%;
+	border : solid 1px #ddd;
+	cell-padding : 0;
+	border-collapse : collapse;
+	background-color : #fff;
+}
+table.nice td, table.nice th {
+	text-align : center;
+	border-bottom : solid 1px #ddd;
+}
+table.nice thead th{
+	border-bottom : solid 3px #ddd;
+	font-weight : bold;
+}
+
+th.header { 
+    background-image: url('../img/sort.gif');     
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center right; 
+    padding-right: 16px; 
+    border-right: 1px solid #ddd; 
+    margin-left: -1px;
+    color : #000; 
+} 
+th.headerSortUp { 
+    background-image: url('../img/asc.gif'); 
+    background-color: #58c;
+    color : #fff; 
+} 
+th.headerSortDown { 
+    background-image: url('../img/desc.gif'); 
+    background-color: #58c;
+    color: #fff; 
+} 
+#scanresults tr.B{
+}
+#scanresults tr.BG{
+}
+#scanresults tr.G{
+}
+#scanresults tr.encrypt_no{
+	font-style : italic;
+	background-color : #eee; 
+}
+#dhcptable tr,
+#arptable tr,
+#scanresults tr{
+	cursor : pointer;
+}
+#details{
+	display : none;
+	position : absolute;
+	border : solid 3px #ddd;
+	width : 400px;
+	top : 230px;
+	z-index : 3; 
+}
+table.details td{
+	text-align : left;
+	font-weight : bold;
+	vertical-align : top; 
+}
+#details table.details td{
+	font-size : 8pt;
+	border-left : solid 1px #ddd;
+}
+table.details td+td{
+	font-weight : normal;
+	padding-left : 1em;
+}
+div.detailclose{
+	display : block;
+	width : 30px;
+	height : 30px;
+	position : absolute;
+	top : -15px;
+	right : -15px;
+	background-position : center center;
+	background-image : url('../img/closebox.png');
+	z-index : 4;
+	cursor:pointer;
+}
+pre.log{
+}
+
+div.rollup{
+	height : 14px;		
+	margin-right : 1em;
+	background-position : right top;
+	background-image : url('../img/rollup.png');
+	background-repeat : no-repeat;
+}
+div.rollup.expanded{
+	background-position : right bottom;
+}
+div.rollup span{
+	display : none;
+}
+#menu a.noyet{
+	text-decoration : line-through;
+}

@@ -1,0 +1,3 @@
+    websAspDefine("executeCommand", executeCommand);
+
+    websFormDefine("formSaveConfig", formSaveConfig);
